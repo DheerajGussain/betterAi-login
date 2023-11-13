@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Agdasima&family=Poppins&display=swap');
+
+
+body {
+  padding: 50px;
+  font-family: 'Poppins', sans-serif;
+  background-color: #70c1ff;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.card {
+  width: 350px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 15px;
+  padding: 40px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+input {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+button {
+  padding: 10px;
+  background-color: #fff;
+  color: #498ffc;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #70c1ff;
+}
+
+.text-center {
+  text-align: center;
+  margin-top: 20px;
+}
+.text-center a {
+  text-decoration: none;
+  color: #498ffc;
+}
+
+.loader {
+  color: #498ffc; 
+  font-family: Consolas, Menlo, Monaco, monospace;
+    font-weight: bolder;
+    font-size: 20vh;
+    opacity: 0.8;
+    text-align: center;
+  }
+  span {
+    display: inline-block;
+    animation: pulse 0.3s alternate infinite ease-in;
+  }
+  .loader:nth-child(odd) {
+    animation-delay: 0.7s;
+  }
+  
+  @keyframes pulse {
+    to {
+      transform: scale(0.7);
+      opacity: 0.5;
+    }
+  }
